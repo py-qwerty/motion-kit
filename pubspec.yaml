@@ -1,7 +1,7 @@
 name: acel_giro_mesure
 description: "Acelerometer, giroscope tool"
 publish_to: 'none'
-version: 1.0.0+1
+version: 1.0.0+3
 
 environment:
   sdk: ^3.10.0
@@ -16,6 +16,9 @@ dependencies:
   flutter_bloc: ^9.1.0
   freezed_annotation: ^3.0.0
   fl_chart: ^1.1.1
+  share_plus: ^10.1.4
+  path_provider: ^2.1.5
+  audioplayers: ^6.1.0
 
 dev_dependencies:
   flutter_test:
@@ -23,6 +26,17 @@ dev_dependencies:
   flutter_lints: ^5.0.0
   freezed: ^3.2.5
   build_runner: ^2.4.15
+  flutter_launcher_icons: ^0.14.2
 
 flutter:
   uses-material-design: true
+  assets:
+    - assets/icon.jpg
+
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "assets/icon.jpg"
+  min_sdk_android: 21
+  adaptive_icon_background: "#000000"
+  adaptive_icon_foreground: "assets/icon.jpg"

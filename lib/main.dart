@@ -19,7 +19,7 @@ class MyApp extends StatelessWidget {
     return BlocProvider<RecordingCubit>(
       create: (_) => RecordingCubit()..loadInitialData(),
       child: MaterialApp(
-        title: 'Acel Giro Mesure',
+        title: 'SensorKit',
         theme: ThemeData.dark().copyWith(
           scaffoldBackgroundColor: Colors.black,
           colorScheme: ColorScheme.fromSeed(
